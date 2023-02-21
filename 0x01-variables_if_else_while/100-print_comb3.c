@@ -13,14 +13,14 @@ int main(void)
 	{
 		for (s = 48; s <= 57; s++)
 		{
-			if (s == 57 && f == 57)
-				break;
 			if (s < f)
 				continue;
 			if (s == f)
 				continue;
 			putchar(f);
 			putchar(s);
+			if (s == 57 && f == 56)
+				break;
 			putchar(',');
 			putchar(' ');
 		}
