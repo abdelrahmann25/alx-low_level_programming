@@ -17,7 +17,7 @@ int main(void)
 			{
 				for (fo = 48; fo <= 57; fo++)
 				{
-					if (s < f || fo < t)
+					if (s < f && fo < t)
 						continue;
 					if (s == f && fo == t)
 						continue;
