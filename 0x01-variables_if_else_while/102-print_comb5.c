@@ -23,6 +23,8 @@ int main(void)
 						continue;
 					if (f == fo && s == t)
 						continue;
+					if (s > fo && f == t)
+						continue;
 					putchar(f);
 					putchar(s);
 					putchar(' ');
