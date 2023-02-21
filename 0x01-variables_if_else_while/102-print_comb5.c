@@ -7,30 +7,25 @@
 */
 int main(void)
 {
-	int f, s, t, fo;
+	int i, j;
 
-	for (f = 48; f <= 57; f++)
+	for (i = 0; i < 100; i++)
 	{
-		for (s = 48; s <= 57; s++)
+		for (j = i; j < 100; j++)
 		{
-			for (t = 48; t <= 57; t++)
+			if (i != j)
 			{
-				for (fo = 48; fo <= 57; fo++)
+				putchar('0' + i / 10);
+				putchar('0' + i % 10);
+				putchar(' ');
+				putchar('0' + j / 10);
+				putchar('0' + j % 10);
+				if (i != 98 || j != 99)
 				{
-					if (f + s >= t + fo)
-						continue;
-					putchar(f);
-					putchar(s);
-					putchar(' ');
-					putchar(t);
-					putchar(fo);
-					if (f == 57 && s == 56 && t == 57 && fo == 57)
-						break;
 					putchar(',');
 					putchar(' ');
 				}
 			}
-
 		}
 	}
 	putchar('\n');
