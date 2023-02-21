@@ -17,8 +17,6 @@ int main(void)
 			{
 				for (fo = 48; fo <= 57; fo++)
 				{
-					if (s == f && fo == t)
-						continue;
 					if (f + s >= t + fo)
 						continue;
 					putchar(f);
