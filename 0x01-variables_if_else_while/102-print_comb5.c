@@ -19,11 +19,13 @@ int main(void)
 				{
 					if (s == f && fo == t)
 						continue;
-					if (f == t && s == fo)
+					if (f == t || s == fo)
 						continue;
-					if (f == fo && s == t)
+					if (f == fo || s == t)
 						continue;
 					if (s > fo && f == t)
+						continue;
+					if (s == fo && f > t)
 						continue;
 					putchar(f);
 					putchar(s);
