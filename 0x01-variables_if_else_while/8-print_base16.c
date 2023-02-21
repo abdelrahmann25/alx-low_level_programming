@@ -14,8 +14,8 @@ int main(void)
 		putchar(c);
 		c++;
 	}
-	c = 65;
-	while (c <= 70)
+	c = 97;
+	while (c <= 102)
 	{
 		putchar(c);
 		c++;
