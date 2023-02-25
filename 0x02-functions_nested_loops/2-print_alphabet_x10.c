@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet_10x - prant all alphabets from a to z 10 times
+ * print_alphabet_x10 - prant all alphabets from a to z 10 times
  */
 void print_alphabet_x10(void)
 {
