@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * using _printalphabets()
+ * print_alphabet - Print all  alphabts from a to z
  */
 
 void print_alphabet(void)
