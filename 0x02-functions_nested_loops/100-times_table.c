@@ -11,14 +11,13 @@ void print_times_table(int n)
 
 	for (i = 0; i <= n; i++)
 	{
-		_putchar('0');
+		printf("0");
 		for (j = 1; j <= n; j++)
 		{
 			result = i * j;
-			printf(",");
-			printf("%4d", result);
+			printf(",%4d", result);
 		}
-		_putchar('\n');
+		printf("\n");
 	}
 }
 
