@@ -2,10 +2,13 @@
 /**
  * _atoi - convert string passed by ref into integer
  * @s: the string converted
+ *
+ * Return: converted string with sign
  */
 int _atoi(char *s)
 {
-	int sign = 1, num = 0;
+	int sign = 1;
+	unsigned int num = 0;
 
 	while (*s != '\0')
 	{
